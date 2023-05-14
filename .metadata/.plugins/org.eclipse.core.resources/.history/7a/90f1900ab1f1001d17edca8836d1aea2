@@ -1,0 +1,29 @@
+package pasteleria;
+
+public class PastelEstandar implements IntPastel{
+
+	private String nombre;
+	private final int PRECIO = 10;
+	
+	public PastelEstandar (String nombre) {
+		this.nombre=nombre;
+	}
+	
+	
+	
+	
+	
+	@Override
+	public String decorar() {
+		// TODO Auto-generated method stub
+		return "Pastel";
+	}
+
+
+	@Override
+	public String tipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

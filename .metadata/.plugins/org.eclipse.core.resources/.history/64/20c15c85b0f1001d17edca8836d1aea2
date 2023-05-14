@@ -1,0 +1,19 @@
+package pasteleria;
+
+public class PastelChocolate extends Pastel {
+	
+	
+	
+	
+    public PastelChocolate(IntPastel pastel, int PRECIO) {
+		super(pastel, PRECIO);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getDescripcion() {
+        return "Pastel de chocolate";
+    }
+    
+    
+    
+}

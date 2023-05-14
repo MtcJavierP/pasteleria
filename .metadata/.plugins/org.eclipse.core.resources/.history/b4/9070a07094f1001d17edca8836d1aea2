@@ -1,0 +1,7 @@
+package pasteleria;
+
+public interface IntPastel {
+
+	String decorar();
+	
+}

@@ -1,0 +1,40 @@
+package pasteleria;
+
+import java.util.ArrayList;
+
+public class PastelDecorado extends Pastel{
+	
+	private List<String> decoraciones;
+
+	  public PastelDecorado(IntPastel pastel) {
+	        super(pastel);
+	        this.decoraciones = new ArrayList<>();
+	    }
+
+	    public void addCapa() {
+	        decoraciones.add("multicapa");
+	        setPrecio(getPrecio() + 5);
+	    }
+
+	    public void addFideosAzucar() {
+	        decoraciones.add("con fideos de azúcar");
+	        setPrecio(getPrecio() + 2);
+	    }
+
+	    public void addFrase(String frase) {
+	        decoraciones.add("con la frase '" + frase + "'");
+	    }
+
+	    @Override
+	    public String getDescripcion() {
+	        StringBuilder sb = new StringBuilder(pastel.getDescripcion());
+	        for (String decoracion : decoraciones) {
+	            sb.append(" ");
+	            sb.append(decoracion);
+	        }
+	        return sb.toString();
+	    }
+	}
+	
+	
+}

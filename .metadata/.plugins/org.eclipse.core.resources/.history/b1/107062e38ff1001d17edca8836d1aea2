@@ -1,0 +1,22 @@
+package pasteleria;
+
+public class PastelMulticapa extends Pastel{
+
+	 private final int CAPAS;
+
+	    public PastelMulticapa(IntPastel pastel, int PRECIO) {
+	        super(pastel, PRECIO + 5);
+	    }
+
+	    public String getDescripcion() {
+	        return super.getDescripcion() + " multicapa";
+	    }
+
+	    public String decorar() {
+	        String decoracion = super.decorar();
+	        for (int i = 0; i < CAPAS; i++) {
+	            decoracion += ", capa de " + (i + 1);
+	        }
+	        return decoracion;
+	    }
+}

@@ -1,0 +1,18 @@
+package pasteleria;
+
+public class PastelImpl implements IntPastel{
+
+	@Override
+	public String decorar() {
+		// TODO Auto-generated method stub
+		return "Soy un Pastel";
+	}
+	
+	public int precio() {
+		
+		return 10;
+	}
+	//habria que hacer una por clase chocolate y clase vainilla?
+	
+
+}

@@ -1,0 +1,7 @@
+package pasteleria;
+
+public class PastelChocolate extends Pastel {
+    public String getDescripcion() {
+        return "Pastel de chocolate";
+    }
+}

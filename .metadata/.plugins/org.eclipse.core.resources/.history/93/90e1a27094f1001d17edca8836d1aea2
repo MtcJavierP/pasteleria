@@ -1,0 +1,25 @@
+package pasteleria;
+
+public class PastelVainillaMulticapa extends PastelVainilla{
+	private int numCapas;
+	
+
+    public PastelVainillaMulticapa(IntPastel pastel, int precio, int numCapas) {
+        super(pastel, precio + 5*numCapas);
+        this.numCapas = numCapas;
+    }
+
+    public String getDescripcion() {
+        return super.getDescripcion() + " multicapa";
+    }
+
+    public String decorar() {
+        String decoracion = super.decorar();
+        for (int i = 0; i < numCapas; i++) {
+            decoracion += ", capa de " + (i + 1);
+        }
+        return decoracion;
+    }
+    
+
+}

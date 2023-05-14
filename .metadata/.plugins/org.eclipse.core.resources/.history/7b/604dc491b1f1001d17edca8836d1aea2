@@ -1,0 +1,24 @@
+package pasteleria;
+
+public class Chocolate extends PastelDecorador{
+
+	public Chocolate(IntPastel pastel) {
+		super(pastel);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public String decorar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	public String tipo() {
+		// TODO Auto-generated method stub
+		return "Pastel de chocolate";
+	}
+	
+	
+
+}

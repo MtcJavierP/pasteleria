@@ -1,0 +1,13 @@
+package pasteleria;
+
+public class PastelImpl implements IntPastel{
+
+	@Override
+	public String decorar() {
+		// TODO Auto-generated method stub
+		return "Soy un Pastel";
+	}
+	
+	
+
+}

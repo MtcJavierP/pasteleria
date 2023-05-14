@@ -1,0 +1,18 @@
+package pasteleria;
+
+public class Main {
+	public static void main(String[] args) {
+    // Create the order
+//    Pedido pedido = new Pedido();
+//    pedido.addPastel(new PastelVainilla());
+//    pedido.addPastel(new PastelChocolate());
+
+    PastelImpl p1= new chocolate();
+    
+    PastelImpl p2 = new PastelImpl();
+    
+   
+    // Print the order
+//    pedido.printPedido();
+}
+}

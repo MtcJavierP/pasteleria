@@ -1,0 +1,9 @@
+package pasteleria;
+
+public interface BaseDecorador{
+	
+	int getPrecio();
+
+	String getDescripcion();
+	
+}

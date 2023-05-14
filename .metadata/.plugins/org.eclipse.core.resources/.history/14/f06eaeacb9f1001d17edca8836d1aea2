@@ -1,0 +1,12 @@
+package pasteleria;
+
+public class Chocolate extends Pastel{
+
+	public Chocolate(IntPastel pastel) {
+		super(pastel);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+}

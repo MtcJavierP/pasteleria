@@ -1,0 +1,55 @@
+package pasteleria;
+
+public class Chocolate extends PastelDecorador{
+
+	private String nombre;
+	private final int PRECIO = 10;
+	
+	public Chocolate (String nombre) {
+		this.nombre=nombre;
+	}
+	
+	
+	
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+
+
+	public int getPRECIO() {
+		return PRECIO;
+	}
+
+
+
+
+
+	@Override
+	public String decorar() {
+		// TODO Auto-generated method stub
+		return "Pastel";
+	}
+
+
+	@Override
+	public String tipo() {
+		// TODO Auto-generated method stub
+		return "Pastel de Chocolate";
+	}
+
+	
+
+}
